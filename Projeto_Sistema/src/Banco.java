@@ -1,8 +1,9 @@
 public class Banco {
-    int id;
-    String numero;
-    String cnpj;
-    String nome;
+    //criar construtor de cada um na aplicação financeira e tirar os sets caso o consrutor n fique vaziov
+    private int id;
+    private String numero;
+    private String cnpj;
+    private String nome;
 
     public int getId() {
         return this.id;

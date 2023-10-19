@@ -1,8 +1,9 @@
 public class ContaCorrente {
-    int id;
-    String numero;
-    double saldo;
-    double limite;
+    //criar construtor de cada um na aplicação financeira e tirar os sets caso o consrutor n fique vazio
+    private int id;
+    private String numero;
+    private double saldo;
+    private double limite;
 
 
 

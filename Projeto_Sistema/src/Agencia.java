@@ -1,7 +1,8 @@
 public class Agencia {
-    int id;
-    String numero;
-    String nome;
+    //criar construtor de cada um na aplicação financeira e tirar os sets caso o consrutor n fique vazio
+    private int id;
+    private String numero;
+    private String nome;
 
     public int getId() {
         return this.id;
