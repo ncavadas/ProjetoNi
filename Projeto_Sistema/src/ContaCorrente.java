@@ -1,12 +1,22 @@
 public class ContaCorrente {
     //criar construtor de cada um na aplicação financeira e tirar os sets caso o consrutor n fique vazio
+
+    //Variáveis
     private int id;
     private String numero;
     private double saldo;
     private double limite;
 
+    //Construtor
+    public ContaCorrente(){}
+    public ContaCorrente(int $id, String $numero, double $saldo, double $limite){
+        this.id = $id;
+        this.numero = $numero;
+        this.saldo = $saldo;
+        this.limite = $limite;
+    }
 
-
+    //Get e Set
     public int getId() {
         return this.id;
     }

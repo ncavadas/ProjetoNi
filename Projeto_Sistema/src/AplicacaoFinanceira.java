@@ -5,6 +5,7 @@ public class AplicacaoFinanceira {
         Conta conta1= new Conta();
         ContaCorrente contaCorrente1= new ContaCorrente();
         ContaPoupanca contaPoupanca1 = new ContaPoupanca();
+        Cliente cliente1 = new Cliente();
 
         //Banco
         banco1.setId(1111);
@@ -33,10 +34,14 @@ public class AplicacaoFinanceira {
         //Conta Poupança
         contaPoupanca1.setId(2244);
         contaPoupanca1.setNumero("7227");
-        System.out.println("ID da conta " + contaPoupanca1.getId());
-        System.out.println("Número da conta " + contaPoupanca1.getNumero());
+        System.out.println("ID da conta poupança " + contaPoupanca1.getId());
+        System.out.println("Número da conta poupança " + contaPoupanca1.getNumero());
 
-
+        //Cliente
+        cliente1.setCpf("15711");
+        cliente1.setNome("4222134");
+        System.out.println("Cpf do cliente " + cliente1.getCpf());
+        System.out.println("Nome do cliente " + cliente1.getNome());
 
 
 
