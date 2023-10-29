@@ -4,8 +4,9 @@ public class ClientePessoaJuridica extends Cliente{
 
     //Construtor
     public ClientePessoaJuridica(){}
-    public ClientePessoaJuridica(String $cpf,String $nome,String $cnpj){
-        super($cpf, $nome);
+    public ClientePessoaJuridica(String $nome,String $cnpj){
+        /*super.setCpf($cpf);*/
+        super.setNome($nome);
         this.cnpj = $cnpj;
     }
 

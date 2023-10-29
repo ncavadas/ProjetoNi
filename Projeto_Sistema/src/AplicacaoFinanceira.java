@@ -1,11 +1,26 @@
 public class AplicacaoFinanceira {
     public static void main(String[] args) {
+        //Conta conta1= new Conta();
+        //Cliente cliente1 = new Cliente();
         Banco banco1= new Banco();
         Agencia agencia1= new Agencia();
-        Conta conta1= new Conta();
         ContaCorrente contaCorrente1= new ContaCorrente();
         ContaPoupanca contaPoupanca1 = new ContaPoupanca();
-        Cliente cliente1 = new Cliente();
+        ClientePessoaFisica clientePessoaFisica1 = new ClientePessoaFisica();
+        ClientePessoaJuridica clientePessoaJuridica1 = new ClientePessoaJuridica();
+
+
+        /*//Conta
+        conta1.setId(3333);
+        conta1.setNumero("0866");
+        System.out.println("ID da conta " + conta1.getId());
+        System.out.println("Número da conta " + conta1.getNumero());*/
+
+        /*//Cliente
+        cliente1.setCpf("15711");
+        cliente1.setNome("4222134");
+        System.out.println("Cpf do cliente " + cliente1.getCpf());
+        System.out.println("Nome do cliente " + cliente1.getNome());*/
 
         //Banco
         banco1.setId(1111);
@@ -19,29 +34,34 @@ public class AplicacaoFinanceira {
         System.out.println("ID da agência " + agencia1.getId());
         System.out.println("Número da agência " + agencia1.getNumero());
 
-        //Conta
-        conta1.setId(3333);
-        conta1.setNumero("0866");
-        System.out.println("ID da conta " + conta1.getId());
-        System.out.println("Número da conta " + conta1.getNumero());
 
         //Conta Corrente
         contaCorrente1.setId(4444);
         contaCorrente1.setLimite(7777);
+        contaCorrente1.setNumero("0866");
         System.out.println("ID da conta corrente " + contaCorrente1.getId());
         System.out.println("Limite da conta corrente " + contaCorrente1.getLimite());
 
         //Conta Poupança
         contaPoupanca1.setId(2244);
         contaPoupanca1.setNumero("7227");
+        contaPoupanca1.setNumero("0866");
         System.out.println("ID da conta poupança " + contaPoupanca1.getId());
         System.out.println("Número da conta poupança " + contaPoupanca1.getNumero());
 
-        //Cliente
-        cliente1.setCpf("15711");
-        cliente1.setNome("4222134");
-        System.out.println("Cpf do cliente " + cliente1.getCpf());
-        System.out.println("Nome do cliente " + cliente1.getNome());
+        //Pessoa Física
+        clientePessoaFisica1.setRg("77.777.777-7");
+        clientePessoaFisica1.setCpf("111.111.111-72");
+        clientePessoaFisica1.setNome("Jureminha");
+        System.out.println("Nome do Cliente " + clientePessoaFisica1.getNome());
+        System.out.println("RG do Cliente " + clientePessoaFisica1.getRg());
+        System.out.println("CPF do Cliente " + clientePessoaFisica1.getCpf());
+
+        //Pessoa Jurídica
+        clientePessoaJuridica1.setCnpj("99.999.999/0001-99");
+        clientePessoaJuridica1.setNome("Robson SA");
+        System.out.println("Nome do Cliente " + clientePessoaJuridica1.getNome());
+        System.out.println("CNPJ do Cliente " + clientePessoaJuridica1.getCnpj());
 
 
 

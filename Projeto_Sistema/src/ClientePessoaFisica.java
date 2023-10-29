@@ -1,17 +1,18 @@
 public class ClientePessoaFisica extends Cliente{
     //Variáveis
-    private String cpf;
+    /*private String cpf;*/
     private String rg;
 
     //Construtor
     public ClientePessoaFisica(){}
     public ClientePessoaFisica(String $cpf,String $nome,String $rg){
-        super($cpf, $nome);
+        super.setCpf($cpf);
+        super.setNome($nome);
         this.rg = $rg;
     }
 
     //Get e Set
-    @Override
+    /*@Override
     public String getCpf() {
         return cpf;
     }
@@ -19,7 +20,7 @@ public class ClientePessoaFisica extends Cliente{
     @Override
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
+    }*/
 
     public String getRg() {
         return rg;

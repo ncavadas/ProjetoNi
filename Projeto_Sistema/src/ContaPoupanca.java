@@ -1,24 +1,24 @@
-public class ContaPoupanca {
+public class ContaPoupanca extends Conta {
     //criar construtor de cada um na aplicação financeira e tirar os sets caso o consrutor n fique vazio
     //Variáveis
-    private int id;
+    /*private int id;
     private String numero;
-    private double saldo;
+    private double saldo;*/
     private int diaDeAniversario;
     private double taxaDeCorrecao;
 
     //Construtor
     public ContaPoupanca(){}
     public ContaPoupanca(int $id, String $numero, double $saldo,int $diaDeAniversario, double $taxaDeCorrecao){
-        this.id = $id;
-        this.numero = $numero;
-        this.saldo = $saldo;
+        super.setId($id);
+        super.setNumero($numero);
+        super.setSaldo($saldo);
         this.diaDeAniversario = $diaDeAniversario;
         this.taxaDeCorrecao = $taxaDeCorrecao;
     }
 
     //Get e Set
-    public int getId() {
+    /*public int getId() {
         return this.id;
     }
     public void setId(int id) {
@@ -35,7 +35,10 @@ public class ContaPoupanca {
 
     public double getSaldo() {
         return this.saldo;
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
+    }*/
     public int getDiaDeAniversario() {
         return this.diaDeAniversario;
     }
@@ -48,7 +51,5 @@ public class ContaPoupanca {
     public void setTaxaDeCorrecao(double taxaDeCorrecao) {
         this.taxaDeCorrecao = taxaDeCorrecao;
     }
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
+
 }

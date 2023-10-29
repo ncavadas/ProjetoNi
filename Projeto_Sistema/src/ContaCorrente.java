@@ -1,23 +1,23 @@
-public class ContaCorrente {
+public class ContaCorrente extends Conta {
     //criar construtor de cada um na aplicação financeira e tirar os sets caso o consrutor n fique vazio
 
     //Variáveis
-    private int id;
+    /*private int id;
     private String numero;
-    private double saldo;
+    private double saldo;*/
     private double limite;
 
     //Construtor
     public ContaCorrente(){}
     public ContaCorrente(int $id, String $numero, double $saldo, double $limite){
-        this.id = $id;
-        this.numero = $numero;
-        this.saldo = $saldo;
+        super.setId($id);
+        super.setNumero($numero);
+        super.setSaldo($saldo);
         this.limite = $limite;
     }
 
     //Get e Set
-    public int getId() {
+    /*public int getId() {
         return this.id;
     }
 
@@ -39,7 +39,7 @@ public class ContaCorrente {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
-    }
+    }*/
     public double getLimite() {
         return this.limite;
     }
