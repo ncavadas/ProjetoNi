@@ -1,6 +1,5 @@
-public class Conta {
-    //criar construtor de cada um na aplicação financeira e tirar os sets caso o consrutor n fique vazio
-    //Variáveis
+public abstract class Conta {
+
     private int id;
     private String numero;
     private double saldo;
@@ -39,7 +38,7 @@ public class Conta {
     }
 
     //Taxa
-    
+
 
 
 

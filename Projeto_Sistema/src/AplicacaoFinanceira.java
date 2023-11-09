@@ -36,6 +36,7 @@ public class AplicacaoFinanceira {
 
 
         //Conta Corrente
+        //((ContaCorrente)contaCorrente1).setLimite(7777); utiliza em casos de "Conta" ser abstrata
         contaCorrente1.setId(4444);
         contaCorrente1.setLimite(7777);
         contaCorrente1.setNumero("0866");
