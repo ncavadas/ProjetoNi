@@ -9,10 +9,11 @@ public class ContaPoupanca extends Conta {
 
     //Construtor
     public ContaPoupanca(){}
-    public ContaPoupanca(int $id, String $numero, double $saldo,int $diaDeAniversario, double $taxaDeCorrecao){
+    public ContaPoupanca(int $id, String $numero, double $saldo,double $taxa,int $diaDeAniversario, double $taxaDeCorrecao){
         super.setId($id);
         super.setNumero($numero);
         super.setSaldo($saldo);
+        super.setTaxa($taxa);
         this.diaDeAniversario = $diaDeAniversario;
         this.taxaDeCorrecao = $taxaDeCorrecao;
     }
@@ -52,4 +53,13 @@ public class ContaPoupanca extends Conta {
         this.taxaDeCorrecao = taxaDeCorrecao;
     }
 
+    @Override
+    public double getTaxa() {
+        return getTaxaDeCorrecao();
+    }
+
+    @Override
+    public void setTaxa(double taxa) {
+        setTaxaDeCorrecao(taxaDeCorrecao);
+    }
 }

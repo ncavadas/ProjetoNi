@@ -3,13 +3,16 @@ public abstract class Conta {
     private int id;
     private String numero;
     private double saldo;
+    private double taxa;
+
 
     //Construtor Conta
     public Conta() {}
-    public Conta(int $id, String $numero, double $saldo){
+    public Conta(int $id, String $numero, double $saldo,double $taxa){
         this.id = $id;
         this.numero = $numero;
         this.saldo = $saldo;
+        this.taxa = $taxa;
     }
 
     //Get e Set
@@ -37,7 +40,14 @@ public abstract class Conta {
         this.saldo = saldo;
     }
 
-    //Taxa
+    public double getTaxa() {
+        return 0.0;
+    }
+
+    public void setTaxa(double taxa) {
+        this.taxa = taxa;
+    }
+
 
 
 

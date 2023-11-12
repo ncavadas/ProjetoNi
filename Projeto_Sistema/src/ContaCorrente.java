@@ -1,19 +1,21 @@
 public class ContaCorrente extends Conta {
-    //criar construtor de cada um na aplicação financeira e tirar os sets caso o consrutor n fique vazio
 
     //Variáveis
     /*private int id;
     private String numero;
     private double saldo;*/
     private double limite;
+    private double taxaDeJuros;
 
     //Construtor
     public ContaCorrente(){}
-    public ContaCorrente(int $id, String $numero, double $saldo, double $limite){
+    public ContaCorrente(int $id, String $numero, double $saldo,double $taxa, double $limite,double $taxaDeJuros){
         super.setId($id);
         super.setNumero($numero);
         super.setSaldo($saldo);
+        super.setTaxa($taxa);
         this.limite = $limite;
+        this.taxaDeJuros = $taxaDeJuros;
     }
 
     //Get e Set
@@ -46,5 +48,22 @@ public class ContaCorrente extends Conta {
 
     public void setLimite(double limite) {
         this.limite = limite;
+    }
+
+    public double getTaxaDeJuros() {
+        return taxaDeJuros;
+    }
+
+    public void setTaxaDeJuros(double taxaDeJuros) {
+        this.taxaDeJuros = taxaDeJuros;
+    }
+    @Override
+    public double getTaxa() {
+        return getTaxaDeJuros();
+    }
+
+    @Override
+    public void setTaxa(double taxa) {
+        setTaxaDeJuros(taxaDeJuros);
     }
 }
