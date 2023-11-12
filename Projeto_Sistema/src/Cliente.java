@@ -1,4 +1,4 @@
-public class Cliente {
+public abstract class Cliente {
     //Variáveis
     private String identificador;
     private String nome;

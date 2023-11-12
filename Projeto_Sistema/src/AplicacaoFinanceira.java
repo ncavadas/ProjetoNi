@@ -1,6 +1,8 @@
 public class AplicacaoFinanceira {
     public static void main(String[] args) {
-        //Conta conta1= new Conta();
+        //Objetos
+
+        //Conta conta1= new Conta(); //*Não se cria objetos em classes abstratas*
         //Cliente cliente1 = new Cliente();
         Banco banco1= new Banco();
         Agencia agencia1= new Agencia();
@@ -8,6 +10,7 @@ public class AplicacaoFinanceira {
         ContaPoupanca contaPoupanca1 = new ContaPoupanca();
         ClientePessoaFisica clientePessoaFisica1 = new ClientePessoaFisica();
         ClientePessoaJuridica clientePessoaJuridica1 = new ClientePessoaJuridica();
+
 
 
         /*//Conta
