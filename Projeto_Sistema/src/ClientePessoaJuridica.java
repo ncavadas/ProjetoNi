@@ -4,9 +4,9 @@ public class ClientePessoaJuridica extends Cliente{
 
     //Construtor
     public ClientePessoaJuridica(){}
-    public ClientePessoaJuridica(String $nome,String $cnpj){
-        /*super.setCpf($cpf);*/
+    public ClientePessoaJuridica(String $nome,String $identificador,String $cnpj){
         super.setNome($nome);
+        super.setIdentificador($identificador);
         this.cnpj = $cnpj;
     }
 
@@ -17,5 +17,14 @@ public class ClientePessoaJuridica extends Cliente{
 
     public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
+    }
+    @Override
+    public String getIdentificador() {
+        return cnpj;
+    }
+
+    @Override
+    public void setIdentificador(String identificador) {
+        setCnpj(cnpj);
     }
 }

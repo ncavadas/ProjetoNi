@@ -1,27 +1,27 @@
 public class Cliente {
     //Variáveis
-    private String cpf;
+    private String identificador;
     private String nome;
 
     //Construtor
     public Cliente(){}
-    public Cliente(String $cpf, String $nome){
-        this.cpf = $cpf;
+    public Cliente(String $identificador, String $nome){
+        this.identificador = $identificador;
         this.nome = $nome;
     }
 
 
     //Get e Set
-    public String getCpf() {
-        return this.cpf;
+    public String getIdentificador() {
+        return this.identificador;
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
+    public void setIdentificador(String identificador) {
+        this.identificador = identificador;
     }
 
     public String getNome() {
-        return this.nome;
+        return "";
     }
 
     public void setNome(String nome) {
